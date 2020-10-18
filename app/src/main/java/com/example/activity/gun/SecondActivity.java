@@ -70,4 +70,19 @@ public class SecondActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+    public void onClicka(View view) {
+        Intent intent = new Intent();
+        switch (view.getId()) {
+            //使用隐式Intent实现 Activity的跳转
+            case R.id.arrow:
+                intent.setAction("com.example.activity.MainActivity");
+                intent.putExtra("msg","main activity");
+                break;
+        }
+        //判断intent 指向的action是否存在
+        if(intent.resolveActivity(getPackageManager()) !=null) {
+            startActivity(intent);
+        }
+    }
 }
