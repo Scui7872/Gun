@@ -9,10 +9,88 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ActivitySet11">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet11" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySet10">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet10" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySet9">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet9" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySet8">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet8" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySet7">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet7" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySet6">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet6" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySet5">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet5" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySet4">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySet3">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySet2">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySet1">
+            <intent-filter>
+                <action android:name="com.example.activity.ActivitySet1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".SecondActivity">
             <intent-filter>
-                <action android:name="com.example.activity.SECOND_ACTIVITY"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.example.activity.SECOND_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".RecycleActivity">
