@@ -64,20 +64,21 @@ public class SecondActivity extends AppCompatActivity {
                 intent.setAction("com.example.activity.ActivitySet11");
                 intent.putExtra("msg","activity set11");
                 break;
-        }
-        //判断intent 指向的action是否存在
-        if(intent.resolveActivity(getPackageManager()) !=null) {
-            startActivity(intent);
-        }
-    }
-
-    public void onClicka(View view) {
-        Intent intent = new Intent();
-        switch (view.getId()) {
-            //使用隐式Intent实现 Activity的跳转
-            case R.id.arrow:
-                intent.setAction("com.example.activity.MainActivity");
-                intent.putExtra("msg","main activity");
+            case R.id.tab4:
+                intent.setAction("com.example.activity.SECOND_ACTIVITY");
+                intent.putExtra("msg","second activity");
+                break;
+            case R.id.tab3:
+                intent.setAction("com.example.activity.ZichanActivity");
+                intent.putExtra("msg","zichan activity");
+                break;
+            case R.id.tab2:
+                intent.setAction("com.example.activity.RecycleActivity");
+                intent.putExtra("msg","recycle activity");
+                break;
+            case R.id.tab1:
+                intent.setAction("com.example.activity.TodayActivity");
+                intent.putExtra("msg","today activity");
                 break;
         }
         //判断intent 指向的action是否存在

@@ -48,15 +48,16 @@ public class RecycleActivity extends AppCompatActivity {
                 intent.putExtra("msg","second activity");
                 break;
             case R.id.tab3:
-                intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:" + "10000"));
+                intent.setAction("com.example.activity.ZichanActivity");
+                intent.putExtra("msg","zichan activity");
                 break;
             case R.id.tab2:
-                intent = new Intent(Settings.ACTION_DATE_SETTINGS);
+                intent.setAction("com.example.activity.RecycleActivity");
+                intent.putExtra("msg","recycle activity");
                 break;
             case R.id.tab1:
-                intent = new Intent(Settings.ACTION_DATE_SETTINGS);
-                break;
+                intent.setAction("com.example.activity.TodayActivity");
+                intent.putExtra("msg","today activity");
         }
         //判断intent 指向的action是否存在
         if(intent.resolveActivity(getPackageManager()) !=null) {
